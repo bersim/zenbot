@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <context> <!-- A regular context -->
-  <input id="greeting" pattern="* напомни [мне] $Text">
+  <input id="greeting" pattern="* напомни [мне] [о] $Text">
     <output value="Выполнено в корневом контексте!" if="full($Text)"/>
 
     <context if="empty($Text)" modal="true"> <!-- A modal context -->
       <output value="О чем необходимо напомнить?"/>
-
       <input pattern="$Text">
         <output value="Выполнено в модальном контексте!"/>
       </input>
-	  
-
     </context>
+  </input>
+  
+  <input id="id2" pattern="* какой цвет [?]">
+	<output value="оранжевый"/>
   </input>
 </context>
 
