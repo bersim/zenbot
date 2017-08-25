@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <context> <!-- A regular context -->
   <input id="greeting" pattern="* remind [me] [to] $Text">
-    <output value="Done!" if="full($Text)"/>
+    <output value="Done1!" if="full($Text)"/>
 
     <context if="empty($Text)" modal="true"> <!-- A modal context -->
       <output value="What would you like me to remind you about?"/>
 
       <input pattern="$Text">
-        <output value="Done!"/>
+        <output value="Done1!"/>
       </input>
 	  
 
