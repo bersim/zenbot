@@ -7,7 +7,7 @@
       <output value="What would you like me to remind you about?"/>
 
       <input pattern="$Text">
-        <output value="Done1!"/>
+        <output value="Done2!"/>
       </input>
 	  
 
