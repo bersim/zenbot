@@ -11,7 +11,7 @@
     </context>
   </input>
   
-  <input id="id2" pattern="* какой цвет [?]">
+  <input id="id2" pattern="*">
 	<output value="оранжевый"/>
   </input>
 </context>
